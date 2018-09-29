@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.2.0.min.js" ></script>
+    <script type="text/javascript">
+        $(function(){
+            $('#hang').val("출력할 행의 수를 입력하시오.");
+            $('#yul').val("출력할 열 수를 입력하시오.");
+            $('#beasu').val("색칠할 수의 배수를 입력하시오.");
+            $('#fScope').val("시작범위를 입력하시오");
+            $('#sScope').val("끝범위를 입력하시오.");
+        })
+    $(function(){
+        $('#hang').focusin(function() {
+            $(this).val('');
+        });
+        $('#yul').focusin(function() {
+            $(this).val('')
+        });
+        $('#beasu').focusin(function() {
+            $(this).val('')
+        });
+        $('#fScope').focusin(function() {
+            $(this).val('')
+        });
+        $('#sScope').focusin(function() {
+            $(this).val('')
+        });
+    })
+    </script>
+</head>
+<body>
+<form action="0713.php" method="get">
+    <input type="text" id = "hang" name="hang"> X <input type="text" id="yul" name="yul">
+    <br>
+    <input type = "text" id="beasu" name="beasu">
+    <br>
+    <input type="text" id="fScope" name="first"> ~ <input type="text" id="sScope" name="last">
+    <br>
+    <input type="submit">
+</form>
+</body>
+</html>
